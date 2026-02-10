@@ -14,9 +14,12 @@
     <None Remove="burger 4.png" />
     <None Remove="burger-bar.png" />
     <None Remove="burger.png" />
+    <None Remove="calendar.png" />
     <None Remove="gear.png" />
     <None Remove="growth.png" />
     <None Remove="logo.png" />
+    <None Remove="people.png" />
+    <None Remove="statistic.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,9 +28,12 @@
     <Resource Include="burger 4.png" />
     <Resource Include="burger-bar.png" />
     <Resource Include="burger.png" />
+    <Resource Include="calendar.png" />
     <Resource Include="gear.png" />
     <Resource Include="growth.png" />
     <Resource Include="logo.png" />
+    <Resource Include="people.png" />
+    <Resource Include="statistic.png" />
   </ItemGroup>
 
 </Project>

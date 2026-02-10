@@ -77,23 +77,25 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="Statistics(2026-2027)" Grid.Row="0" Grid.Column="0" FontSize="16" 
-                       FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" 
-                       Margin="10,10,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/statistic.png" Width="20" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" ></Image>
+                <TextBlock Text="Statistics(2026-2027)" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"  Margin="5,10,0,0"></TextBlock>
+            </StackPanel>
 
-            </TextBlock>
-            <TextBlock Text="Last 3 Days Application" Grid.Row="0" Grid.Column="1" FontSize="16" 
-                       FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" 
-                       Margin="10,10,0,0">
+            <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="/calendar.png" Width="20" Height="20" Margin="10,10,0,0" VerticalAlignment="Top"></Image>
+                <TextBlock Text="Last 3 Days Application" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Margin="5,10,0,0"></TextBlock>
+            </StackPanel>
 
-            </TextBlock>
-            <TextBlock Text="For Your Interview" Grid.Row="0" Grid.Column="2" FontSize="16" 
-                       FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" 
-                       Margin="10,10,0,0">
+            <StackPanel Grid.Column="2" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="/people.png" Width="20" Height="20" Margin="10,10,0,0" VerticalAlignment="Top"></Image>
+                <TextBlock Text="For Your Interview" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Margin="5,10,0,0" ></TextBlock>
+            </StackPanel>
 
-            </TextBlock>
-            <StackPanel Grid.Row="1" Background="#FFB5B4B4"/>
-
+            <StackPanel Orientation="Vertical" Grid.Row="1" Background="Gray">
+                <TextBlock></TextBlock>
+                
+            </StackPanel>
 
 
         </Grid>
