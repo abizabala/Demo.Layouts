@@ -26,29 +26,33 @@
                 <RowDefinition Height="*"></RowDefinition>
                 
             </Grid.RowDefinitions>
-            <Grid Background="#FF343A40">
+            <Grid Background="#FF343A40" Height="47">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Image Source="/logo.png" Margin="5"></Image>
-                <TextBlock Padding="5" Foreground="White" Grid.Column="1" Text="UAC Integrated System" VerticalAlignment="Center">
+                <Image Source="/logo.png" Margin="5" Width="35" Height="35" ></Image>
+                <TextBlock Padding="5" Foreground="White" Grid.Column="1" Text="UAC Integrated System" VerticalAlignment="Center" FontSize="20">
                 </TextBlock>
             </Grid>
+
+            <!--STACK PANEL-->
             <Grid Grid.Row="1">
                 <StackPanel>
-                    <Label Foreground="White" Content="Registrar Module" FontWeight="Bold"></Label>
-                    <Button Content="Student"></Button>
-                    <Button Content="Section"></Button>
-                    <Button Content="Grades Encoding"></Button>
-                    <Button Content="Subject"></Button>
-                    <Button Content="Reports"></Button>
-                    <Button Content="Maintenance"></Button>
-                    <Button Content="Announcements"></Button>
-                    <Button Content="Survey"></Button>
+                    <Label Foreground="White" Content="Registrar Module" FontWeight="Bold" FontSize="18"></Label>
+                    <Button Content="Student" FontSize="16"></Button>
+                    <Button Content="Section" FontSize="16"></Button>
+                    <Button Content="Grades Encoding" FontSize="16"></Button>
+                    <Button Content="Subject" FontSize="16"></Button>
+                    <Button Content="Reports" FontSize="16"></Button>
+                    <Button Content="Maintenance" FontSize="16"></Button>
+                    <Button Content="Announcements" FontSize="16"></Button>
+                    <Button Content="Survey" FontSize="16"></Button>
                 </StackPanel>
             </Grid>
         </Grid>
+
+        <!--UAC INTEGRATED SYSTEM-->
         <Grid DockPanel.Dock="Top" Height="40" Background="#FFFFC107">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="40"></ColumnDefinition>
@@ -59,11 +63,14 @@
             <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Column="1" Text="Gabrielle Zabala"></TextBlock>
             <Image Margin="8" Grid.Column="2"  Source="/gear.png"></Image>
         </Grid>
+
+        <!--BACKGROUND OF USTAC-->
         <Grid >
             <Grid.Background>
                 <ImageBrush Stretch="Uniform" ImageSource="/logo.png" Opacity="0.2"/>
             </Grid.Background>
 
+            <!--STACK PANEL-->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -75,27 +82,144 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
+            <!--STATISTICS (2026-2027)-->
             <StackPanel Orientation="Horizontal">
-                <Image Source="/statistic.png" Width="20" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" ></Image>
-                <TextBlock Text="Statistics(2026-2027)" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"  Margin="5,10,0,0"></TextBlock>
+                <Image Source="/statistic.png" Width="40" Height="40" Margin="10,10,0,0" VerticalAlignment="Center" ></Image>
+                <TextBlock Text="Statistics(2026-2027)" VerticalAlignment="Center" FontSize="36" FontWeight="Bold"  Margin="5,10,0,0"></TextBlock>
             </StackPanel>
 
+            <!--LAST 3 DAYS APPLICATION-->
             <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Image Source="/calendar.png" Width="20" Height="20" Margin="10,10,0,0" VerticalAlignment="Top"></Image>
-                <TextBlock Text="Last 3 Days Application" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Margin="5,10,0,0"></TextBlock>
+                <Image Source="/calendar.png" Width="40" Height="40" Margin="10,10,0,0" VerticalAlignment="Center"></Image>
+                <TextBlock Text="Last 3 Days Application" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Margin="5,10,0,0"></TextBlock>
             </StackPanel>
 
+            <!--FOR YOUR INTERVIEW-->
             <StackPanel Grid.Column="2" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Image Source="/people.png" Width="20" Height="20" Margin="10,10,0,0" VerticalAlignment="Top"></Image>
-                <TextBlock Text="For Your Interview" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Margin="5,10,0,0" ></TextBlock>
+                <Image Source="/people.png" Width="40" Height="40" Margin="10,10,0,0" VerticalAlignment="Center" ></Image>
+                <TextBlock Text="For Your Interview" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Margin="5,10,0,0" />
             </StackPanel>
+            
+            
+<!--TOTAL APPLICANTS-->
+            <Border Grid.Row="1" Grid.Column="0" Background="WhiteSmoke" CornerRadius="10" Margin="0,1,2,1" >
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="3" Opacity="0.3"></DropShadowEffect>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="199" FontSize="48" FontWeight="Bold" Margin="5" ></TextBlock>
+                    <TextBlock Text="Total Applicants" FontSize="18" Foreground="Gray" Margin="5"></TextBlock>
+                </StackPanel>
+            </Border>
+            
+<!--NEW APPLICATION-->
+            <Border Grid.Row="2" Grid.Column="0" Background="WhiteSmoke" CornerRadius="10" Margin="2">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="3" Opacity="0.3"></DropShadowEffect>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="2" FontSize="48" FontWeight="Bold" Margin="5"></TextBlock>
+                    <TextBlock Text="New Application" FontSize="18" Foreground="Gray" Margin="5"></TextBlock>
+                </StackPanel>
+            </Border>
+            
+<!--COMPLETETED REQUIREMENTS-->
 
-            <StackPanel Orientation="Vertical" Grid.Row="1" Background="Gray">
-                <TextBlock></TextBlock>
-                
-            </StackPanel>
+            <Border Grid.Row="3" Grid.Column="0" Background="WhiteSmoke" CornerRadius="10" Margin="2">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="3" Opacity="0.3"></DropShadowEffect>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="17" FontSize="48" FontWeight="Bold" Margin="5"></TextBlock>
+                    <TextBlock Text="Completed Requirements" FontSize="18" Foreground="Gray" Margin="5"></TextBlock>
+                </StackPanel>
+            </Border>
+
+<!--APPLICANTS SCHEDULED TODAY-->
+            <Border Grid.Row="4" Grid.Column="0" Background="WhiteSmoke" CornerRadius="10" Margin="2">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="3" Opacity="0.3"></DropShadowEffect>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="3" FontSize="48" FontWeight="Bold" Margin="5"></TextBlock>
+                    <TextBlock Text="Applicants Scheduled Today" FontSize="18" Foreground="Gray" Margin="5"></TextBlock>
+                </StackPanel>
+            </Border>
+
+<!--NO SHOW-->
+            <Border Grid.Row="5" Grid.Column="0" Background="WhiteSmoke" CornerRadius="10" Margin="2">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="3" Opacity="0.3"></DropShadowEffect>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="0" FontSize="48" FontWeight="Bold" Margin="5"></TextBlock>
+                    <TextBlock Text="No Show" FontSize="18" Foreground="Gray" Margin="5"></TextBlock>
+                </StackPanel>
+            </Border>
+            
+<!---PREPARATORY DEPARTMENT-->
+            <Border Grid.Row="1" Grid.Column="1" Background="WhiteSmoke" CornerRadius="10" Margin="2">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="3" Opacity="0.3"></DropShadowEffect>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="0" FontSize="48" FontWeight="Bold" Margin="5"></TextBlock>
+                    <TextBlock Text="Preparatory Department" FontSize="18" Foreground="Gray" Margin="5"></TextBlock>
+                </StackPanel>
+            </Border>
+            
+<!---BASIC EDUCATION-->
+            <Border Grid.Row="2" Grid.Column="1" Background="WhiteSmoke" CornerRadius="10" Margin="2">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="3" Opacity="0.3"></DropShadowEffect>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="7" FontSize="48" FontWeight="Bold" Margin="5"></TextBlock>
+                    <TextBlock Text="Basic Education" FontSize="18" Foreground="Gray" Margin="5"></TextBlock>
+                </StackPanel>
+            </Border>
+            
+<!---SENIOR HIGH-->
+            <Border Grid.Row="3" Grid.Column="1" Background="WhiteSmoke" CornerRadius="10" Margin="1,1,2,1">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="3" Opacity="0.3"></DropShadowEffect>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="1" FontSize="48" FontWeight="Bold" Margin="5"></TextBlock>
+                    <TextBlock Text="Senior High School" FontSize="18" Foreground="Gray" Margin="5"></TextBlock>
+                </StackPanel>
+            </Border>
+
+<!---HIGHER EDUCATION-->
+
+            <Border Grid.Row="4" Grid.Column="1" Background="WhiteSmoke" CornerRadius="10" Margin="2,1,2,1">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="3" Opacity="0.3"></DropShadowEffect>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="0" FontSize="48" FontWeight="Bold" Margin="5"></TextBlock>
+                    <TextBlock Text="Higher Education" FontSize="18" Foreground="Gray" Margin="5"></TextBlock>
+                </StackPanel>
+            </Border>
+            
+<!---FOR YOUR INTERVIEW-->
+            <Border Grid.Row="1" Grid.Column="2" Background="#DC3545" CornerRadius="10" Margin="2,1,2,1">
+                <Border.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="15" ShadowDepth="3" Opacity="0.3"></DropShadowEffect>
+                </Border.Effect>
+                <StackPanel>
+                    <TextBlock Text="0" FontSize="48" FontWeight="Bold" Foreground="White" Margin="5"/>
+                    <TextBlock Text="For Your Interview" FontSize="18" Foreground="White" Margin="5"></TextBlock>
+                </StackPanel>
+            </Border>
+
+
+
+
+
 
 
         </Grid>
